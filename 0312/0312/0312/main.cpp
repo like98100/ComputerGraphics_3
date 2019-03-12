@@ -1,14 +1,11 @@
 #include "Shape.h"
 #include "Rectangle.h"
 #include "Circle.h"
-#include <iostream>
-using namespace std;
 int main()
 {
 	//Shape a(100, 40);
 	//Rectangle b(120, 40, 50, 20);
 	//Circle c(200, 100, 50);
-
 	//a.Draw();
 	//b.Draw();
 	//c.Draw();
@@ -26,5 +23,6 @@ int main()
 		delete shapes[i];
 		shapes[i] = NULL;
 	}
+
 	return 0;
 }

@@ -1,9 +1,7 @@
 #include "Rectangle.h"
-//#include <iostream>
-//using namespace std;
 
-const void Rectangle::Draw()
+void Rectangle::Draw() const
 {
-	cout << "[Rectangle] position = (" << _x << ", " << _y << "), size = ("
-		 << _width << ", " << _height << ")"<< endl;
+	cout << "[RECTANGLE] position = ( " << _x << ", " << _y << " ), size = ( " <<
+		 _width << ", " << _height << " )" << endl;
 }
