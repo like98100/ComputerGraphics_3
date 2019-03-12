@@ -1,0 +1,12 @@
+class -> structure
+	- variable(data)
+	- function(method)
+¡Ø C++ == C + Independence and reusability
+
+overloading
+
+parents class = child class (ok)
+child class = parents class (error)
+
+Has-a == Containment (ex)Car has a tire)
+Is-a == Inheritance (ex)Apple is a fruit)
