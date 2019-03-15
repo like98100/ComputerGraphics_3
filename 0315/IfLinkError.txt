@@ -1,0 +1,1 @@
+Link Error -> project -> linker -> system -> subsystem:window
