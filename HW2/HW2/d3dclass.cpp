@@ -423,17 +423,24 @@ void D3DClass::GetVideoCardInfo(char* cardName, int& memory)
 	strcpy_s(cardName, 128, m_videoCardDescription);
 	memory = m_videoCardMemory;
 
-	HANDLE hFile;
-	DWORD resultad;
-	hFile = CreateFile(_T("VideoText.txt"),
-		GENERIC_READ | GENERIC_WRITE, 0, 
-		NULL, CREATE_ALWAYS, 0, NULL);
+	//HANDLE hFile;
+	//DWORD resultad;
+	//hFile = CreateFile(_T("VideoText.txt"),
+	//	GENERIC_READ | GENERIC_WRITE, 0, 
+	//	NULL, CREATE_ALWAYS, 0, NULL);
 
 
-	//WriteFile(hFile, cardName, sizeof(TCHAR)*3, &resultad, NULL);
-	//WriteFile(hFile, temp, sizeof(TCHAR) * 3, &resultad, NULL);
+	////WriteFile(hFile, cardName, sizeof(TCHAR)*3, &resultad, NULL);
+	////WriteFile(hFile, temp, sizeof(TCHAR) * 3, &resultad, NULL);
 
-	WriteFile(hFile, m_videoCardDescription, sizeof(TCHAR) * 20, &resultad, NULL);
-	WriteFile(hFile, &m_videoCardMemory, sizeof(int) * 30, NULL, NULL);
+	//WriteFile(hFile, m_videoCardDescription, sizeof(TCHAR) * 20, &resultad, NULL);
+	//WriteFile(hFile, &m_videoCardMemory, sizeof(int) * 30, NULL, NULL);
+
+	std::ofstream oFile;
+	oFile.open("VideoInfo.txt", std::ios::trunc);
+
+	oFile << m_videoCardDescription << std::endl << m_videoCardMemory << std::endl;
+	oFile.close();
+
 	return;
 }
