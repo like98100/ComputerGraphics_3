@@ -1,0 +1,15 @@
+﻿D:\Visual 2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 중간 디렉터리(Debug\)에 다른 프로젝트(0503.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  cameraclass.cpp
+  colorshaderclass.cpp
+  d3dclass.cpp
+  graphicsclass.cpp
+  inputclass.cpp
+  lightclass.cpp
+  lightshaderclass.cpp
+  main.cpp
+  modelclass.cpp
+  systemclass.cpp
+  textureclass.cpp
+  textureshaderclass.cpp
+  코드를 생성하고 있습니다...
+  0503.vcxproj -> E:\ComputerGraphics\0503_2\Tuto_8\0503\Debug\Tuto8.exe
